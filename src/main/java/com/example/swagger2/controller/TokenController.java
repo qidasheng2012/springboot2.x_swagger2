@@ -11,14 +11,14 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.UUID;
 
 @Slf4j
-@Api(tags = "token 控制器")
 @RestController
 @RequestMapping("/token")
+@Api(tags = "token Controller")
 public class TokenController {
 
     @GetMapping
     @ApiOperation(value = "获取token")
-    @ApiImplicitParam(name = "prefix", value = "前缀")
+    @ApiImplicitParam(name = "prefix", value = "token 前缀")
     public String getToken(String prefix) {
         String uuid = UUID.randomUUID().toString().replaceAll("-", "");
         return prefix + uuid;
