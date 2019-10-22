@@ -1,4 +1,4 @@
-package com.example.swagger2.controller;
+package com.it.swagger2.controller;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;

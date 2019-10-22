@@ -1,6 +1,6 @@
-package com.example.swagger2.controller;
+package com.it.swagger2.controller;
 
-import com.example.swagger2.model.User;
+import com.it.swagger2.domain.User;
 import io.swagger.annotations.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;

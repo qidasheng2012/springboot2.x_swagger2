@@ -1,4 +1,4 @@
-package com.example.swagger2.config;
+package com.it.swagger2.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,7 +12,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @Configuration
-@EnableSwagger2
+@EnableSwagger2 // 启用swagger2
 public class Swagger2Config {
 
     @Bean
@@ -20,7 +20,7 @@ public class Swagger2Config {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.example.swagger2")) //扫描路径
+                .apis(RequestHandlerSelectors.basePackage("com.it.swagger2")) //扫描路径
                 .paths(PathSelectors.any()) //定义哪些路径的接口需要生成文档
                 .build();
     }

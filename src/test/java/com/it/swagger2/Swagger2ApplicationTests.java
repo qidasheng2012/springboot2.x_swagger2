@@ -1,4 +1,4 @@
-package com.example.swagger2;
+package com.it.swagger2;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
